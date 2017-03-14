@@ -1,6 +1,7 @@
-body{
+body, header{
   background-color: #a8201a ;
   scroll-behavior: disable;
+  
 }
 .row{
   width: inherit;
@@ -61,5 +62,8 @@ p{
     font-family: 'Noto Serif',serif;
     color: #3a4145;
     margin: 1.6em 0
+}
+h3{
+  font-family: roboto;
 }
 
