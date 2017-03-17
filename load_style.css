@@ -1,0 +1,29 @@
+body
+{
+ background-color:#E6E6E6;
+ font-family:helvetica;
+}
+
+.result
+{
+ text-align:left;
+ background-color:#aac556;
+ width:70%;
+ padding:2%;
+ box-sizing:border-box;
+ color:#F2F2F2;
+ border-radius:3px;
+ border:1px solid #424242;
+ font-style:italic;
+}
+#load
+{
+ width:400px;
+ height:40px;
+ color:brown;
+ background-color:brown;
+ border-radius:3px;
+ color:white;
+ border:none;
+ font-size:17px;
+}
