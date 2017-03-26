@@ -57,16 +57,48 @@
              
              <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav">
-                  <li ><a href="profile.php">MY PROFILE</a></li>
+                  <li > <?php      
+	 if($_SESSION['loginid']=="")
+	 {
+	 echo "<a href='index.php'>Home</a>";
+          
+			}
+			else{
+			   echo "<a href='profile.php'>MY PROFILE</a>";
+			}
+			?></li>
                     <li><a href="theme.php">THEME</a></li>
                     <li ><a href="contact.php">CONTACT US</a></li>
                     <li class="active"><a href="legend.php">THE LEGEND OF SEABISCUIT</a></li>
                  </ul>
-				 <ul class="nav navbar-nav navbar-right">
-                 <form action="logout.php" method="post" class="nav navbar-form navbar-right" style="display:inline;">
-                <button type="submit" class="btn btn-default">Logout</button>
+				 
+				  <?php      
+	 if($_SESSION['loginid']=="")
+	 {
+             echo "<form class='nav navbar-form navbar-right' style='display:inline;'>
+               <div class='form-group'>
+                 <input type='text' class='form-control' placeholder='Search'>
+                </div>
+               <button type='submit' class='btn btn-default'>Submit</button>
+               </form>
+                
+                <ul class='nav navbar-nav navbar-right'>
+                 <li><a href='signup.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>
+                 <li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>
+             </ul>";
+                 }
+      else
+	  {
+                
+           echo "<ul class='nav navbar-nav navbar-right'>
+                  <form action='logout.php' method='post' class='nav navbar-form navbar-right' style='display:inline;'>
+                <button type='submit' class='btn btn-default'>Logout</button>
                </form> 
-             </ul>
+			    </ul>";
+				}
+				?>
+				 
+				 
              </div>
           </div>
       </nav>

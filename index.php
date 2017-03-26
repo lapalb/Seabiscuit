@@ -87,9 +87,9 @@ function loadmore()
 		   			 <div class="collapse navbar-collapse" id="myNavbar">
 		     		   <ul class="nav navbar-nav">
 					        <li class="active"><a href="">Home</a></li>
-				            <li><a href="theme.html">Theme</a></li>
-				            <li><a href="contact.html">CONTACT US</a></li>
-				            <li><a href="legend.html">THE LEGEND OF SEABISCUIT</a></li>
+				            <li><a href="theme.php">Theme</a></li>
+				            <li><a href="contact.php">CONTACT US</a></li>
+				            <li><a href="legend.php">THE LEGEND OF SEABISCUIT</a></li>
 				         </ul>				        
 				        <ul class="nav navbar-nav navbar-right">
 	       				 <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
